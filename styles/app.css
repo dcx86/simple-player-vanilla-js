@@ -1,0 +1,44 @@
+.player {
+    display: grid;
+    height: 100vh;
+    grid-template-areas:
+        ". header ."
+        ". main ."
+        ". nav ."
+        ". footer .";
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    background-color: aquamarine;
+}
+
+.player > header {
+    grid-area: header;
+    background-color: burlywood;
+}
+
+.player > main {
+    grid-area: main;
+    background-color: palevioletred;
+}
+
+.player__video {
+    object-fit: cover;
+}
+
+.player > nav {
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    background-color: cadetblue;
+}
+
+.player__poster {
+    background-color: darkgreen;
+}
+
+.player > footer {
+    grid-area: footer;
+    background-color: coral;
+}
