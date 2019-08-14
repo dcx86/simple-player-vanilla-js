@@ -7,7 +7,7 @@
         ". nav ."
         ". footer .";
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr auto 1fr;
     grid-gap: 1rem;
     background-color: aquamarine;
 }
@@ -18,12 +18,13 @@
 }
 
 .player > main {
+    height: 100%;
     grid-area: main;
     background-color: palevioletred;
 }
 
 .player__video {
-    object-fit: cover;
+    height: 100%;
 }
 
 .player > nav {
