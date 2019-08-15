@@ -54,6 +54,24 @@ video {
     padding: 0.3rem;
 }
 
+.player__poster span {
+    display: none;
+    max-width: 29rem;
+    text-align: left;
+    font-weight: 500;
+    background-color: #fff;
+    border-style: solid;
+    border-color: gainsboro;
+    border-width: 0.1rem;
+    padding: 2rem;
+}
+
+.player__poster:hover span {
+    display: block;
+    position: fixed;
+    overflow: hidden;
+}
+
 .player > footer {
     grid-area: footer;
 }
